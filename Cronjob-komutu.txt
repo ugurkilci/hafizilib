@@ -1,0 +1,8 @@
+Siz siteyi kapattığınızda bile arkaplanda istediğiniz dosyayı çalıştırmaya yarar.
+Çok severim. :)
+
+Normal sitelerde:
+php -q /home/cpaneluser adınız/www/dosya.php
+
+Anormal sitelerde:
+Natro: php /home/user adınız/public_html/sayfa.php

@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^sitemap.xml$ sitemap.php [NC,L]
+RewriteRule ^valide/(.*)$ index.php?p=$1 [QSA,L]

@@ -1,0 +1,8 @@
+/*
+Sağdan soldan sündürülmüş kötü görüntüye sebep olan estetik açıdan berbat olan resimleri sündürmeden kurtaran koddur.
+Benim gibi tasarım delisi insanlar için velinimettir.
+*/
+
+.resim{
+object-fit: cover;
+}

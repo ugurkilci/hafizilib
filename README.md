@@ -1,7 +1,7 @@
 # Hafız-ı Lib
 Elimin altında olmasını istediğim kodlar ve bilgiler
 
-Yıllar önce kendim için açtığım blog yaklaşık 10000 tıklanma alacak. Şimdi seviye atlatmanın vakti geldi. Başkalarınıda paylaşıyorum.
+Yıllar önce kendim için açtığım blog yaklaşık 10000 tıklanma aldı. Şimdi seviye atlatmanın vakti geldi. Başkalarınıda paylaşıyorum.
 
 https://hafizilib.blogspot.com/
 

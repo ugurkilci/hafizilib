@@ -3,7 +3,8 @@ Elimin altında olmasını istediğim kodlar ve bilgiler
 
 Yıllar önce kendim için açtığım blog yaklaşık 10000 tıklanma aldı. Şimdi seviye atlatmanın vakti geldi. Başkalarınıda paylaşıyorum.
 
-https://hafizilib.blogspot.com/
+PATREON'DAN DESTEK OL!
+https://patreon.com/ugur
 
 Aramak için: https://github.com/ugurkilci/hafizilib/find/master
 Benim bookmarkımda yer alıyor. 

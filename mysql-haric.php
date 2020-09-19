@@ -1,0 +1,1 @@
+WHERE icerik_link!=?

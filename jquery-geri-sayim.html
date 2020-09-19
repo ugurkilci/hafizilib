@@ -1,0 +1,24 @@
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<div class="sayac"><span></span></div>
+<script type="text/javascript">
+
+    $(function(){
+
+        var saniye = 30;
+        var sayacYeri = $("div.sayac span");
+
+        $.sayimiBaslat = function(){
+            if(saniye > 1){
+                saniye--;
+                sayacYeri.text(saniye);
+            } else {
+                $("div.sayac").text("Reklamlar");
+            }
+        }
+
+        sayacYeri.text(saniye);
+        setInterval("$.sayimiBaslat()", 1000);
+
+    });
+
+</script>

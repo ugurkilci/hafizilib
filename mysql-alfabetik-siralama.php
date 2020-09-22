@@ -1,0 +1,2 @@
+ORDER BY adsoyad DESC
+

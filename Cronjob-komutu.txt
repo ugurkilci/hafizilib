@@ -6,3 +6,6 @@ php -q /home/cpaneluser adınız/www/dosya.php
 
 Anormal sitelerde:
 Natro: php /home/user adınız/public_html/sayfa.php
+
+Çok anormal sitelerde:
+Natro: curl -XGET https://www.girisimzel.com/dosya.php

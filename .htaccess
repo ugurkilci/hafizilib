@@ -1,3 +1,15 @@
 RewriteEngine On
+
+# site.com/sitemap.xml
 RewriteRule ^sitemap.xml$ sitemap.php [NC,L]
+
+# site.com/valide
 RewriteRule ^valide/(.*)$ index.php?p=$1 [QSA,L]
+
+# site.com/profil/kullaniciadi
+RewriteRule ^profil/([a-zA-Z0-9_-]+)$ profil.php?kadi=$1 [QSA,L]
+
+# site.com/kullaniciadi/
+# site.com/kullaniciadi
+RewriteRule ^([a-zA-Z0-9_-]+)/$ profil.php?kadi=$1 [QSA,L]
+RewriteRule ^([a-zA-Z0-9_-]+)$ profil.php?kadi=$1 [QSA,L]

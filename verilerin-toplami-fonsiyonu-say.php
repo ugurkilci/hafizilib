@@ -3,10 +3,12 @@
 // Veritabanındaki verilerin toplamını gösteren fonksiyon
 
 function say($a){
- include 'ayar.php'; // ayar dosyası
+ global $db;
  $sorgu = $db->prepare("SELECT COUNT(*) FROM icerik WHERE kate=?");
- $sorgu->execute(array($a));
+ $sorgu->execute([
+  
+ ]);
  $say = $sorgu->fetchColumn();
 
- echo $say;
+ return $say;
 }

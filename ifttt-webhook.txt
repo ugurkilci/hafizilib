@@ -1,0 +1,7 @@
+URL: Standart webhook url
+
+Method: Post
+
+Content Type (optional): application/json
+
+Body (optional): { "username":"Girişimzel","icon_url":"https://www.girisimzel.com/img/logo-siyah.jpg","content":" {{EntryTitle}} {{EntryUrl}}" }

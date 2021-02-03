@@ -6,3 +6,7 @@ if(strstr($email, "@")){
 }else{
   echo "@ karakter yoktur. ";
 }
+
+###############
+
+strstr($, '')

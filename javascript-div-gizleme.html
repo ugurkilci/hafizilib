@@ -1,0 +1,13 @@
+<script>
+function gizleGoster(ID) {
+  var secilenID = document.getElementById(ID);
+  if (secilenID.style.display == "none") {
+    secilenID.style.display = "";
+  } else {
+    secilenID.style.display = "none";
+  }
+}
+</script>
+
+<button onclick="gizleGoster('sonuc');">Gizle / Göster</button>
+<p id="sonuc">Gizlenip gösterilen nesne</p>

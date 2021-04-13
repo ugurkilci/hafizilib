@@ -1,16 +1,10 @@
 <?php
 
-// Siteye girenler mobilden girdiyse başka şeyler gösterebilirsin. :)
-$hua=$_SERVER['HTTP_USER_AGENT'];
-$iphone = strpos($hua,"iPhone");
-$android = strpos($hua,"Android");
-$webos = strpos($hua,"webOS");
-$ipod = strpos($hua,"iPod");
-if ($iphone || $android || $webos || $ipod || $bberry)
-{
-echo "blabla";
+$hua      = $_SERVER['HTTP_USER_AGENT'];
+$iphone   = strpos($hua,"iPhone");
+$android  = strpos($hua,"Android");
+$webos    = strpos($hua,"webOS");
+$ipod     = strpos($hua,"iPod");
+if ($iphone || $android || $webos || $ipod){
+  
 }
-
-
-// Sıkıştırılmış
-$hua=$_SERVER['HTTP_USER_AGENT'];$iphone=strpos($hua,"iPhone");$android=strpos($hua,"Android");$webos=strpos($hua,"webOS");$ipod=strpos($hua,"iPod");if($iphone||$android||$webos||$ipod||$bberry){echo"blabla";}

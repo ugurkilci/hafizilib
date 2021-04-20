@@ -1,3 +1,4 @@
+<?php
 if (isset($_POST["resimguncelle"])) {
     if(isset($_FILES['dosya'])){
         $hata = $_FILES['dosya']['error'];

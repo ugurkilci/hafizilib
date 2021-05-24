@@ -2,20 +2,25 @@
 
 // Bir yazı içinde link varsa onu tıklanabilir hale getiriyor. Kullanışlı.
 
-function otolink($veri, $ozellikler=array()) {
-    $ekOzellik  = "";
-    $veri       = ' ' . $veri;
-    foreach ($ozellikler as $ozellik => $deger) {
-  $ekOzellik .= " {$ozellik}=\"{$deger}\"";
-    }
-    $veri = preg_replace(
-       '`([^"=\'>])((http|https|ftp)://[^\s<]+[^\s<\.)])`i',
-       '$1<a href="$2"'.$ekOzellik.'>$2</a>',
-       $veri
+function otolink($data) {
+    $array  = array(
+        "target"=>"_blank",
+        "rel"=>"nofollow noopener noreferrer",
+        "class"=>"text-white"
     );
-    $veri = substr($veri, 1);
-    return $veri;
- }
+    $add    = "";
+    $data   = ' ' . $data;
+    foreach ($array as $row => $value) {
+        $add .= " {$row}=\"{$value}\"";
+    }
+    $data = preg_replace(
+    '`([^"=\'>])((http|https|ftp)://[^\s<]+[^\s<\.)])`i',
+    '$1<a href="$2"'.$add.'>$2</a>',
+    $data
+    );
+    $data = substr($data, 1);
 
- $str = 'test 123 http://ugurkilci.com global cap cup';
- echo otolink($str, array("target"=>"_blank","rel"=>"nofollow noopener noreferrer"));
+    return $data;
+}
+
+echo otolink('test 123 http://ugurkilci.com global cap cup');

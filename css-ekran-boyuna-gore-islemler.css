@@ -1,3 +1,6 @@
-@media screen and (min-width: 300px) {
-
+@media screen and (max-width: 400px) {
+body {
+    background-color: blue;
+  }
 }
+/*400px altına inerse arkaplan mavi olsun*/

@@ -2,7 +2,7 @@
 
 // Başka siteden veri çekmeye yarıyor. Yani klasik Curl
 
-function resimlink($a){
+function _c($a){
     $ch         = curl_init();
     $header     = array();
     $header[]   = "Accept-Language: tr-tr,en;q=0.5"; 

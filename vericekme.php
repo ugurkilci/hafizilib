@@ -1,7 +1,9 @@
 <?php
 
-$data = $db->prepare("SELECT * FROM tabloadi WHERE id=?");
-$data ->execute([
-
+$data = $db -> prepare("SELECT * FROM tabloname WHERE
+  id=?
+");
+$data -> execute([
+  $
 ]);
-$_data = $data->fetch(PDO::FETCH_ASSOC);
+$_data = $data -> fetch(PDO::FETCH_ASSOC);

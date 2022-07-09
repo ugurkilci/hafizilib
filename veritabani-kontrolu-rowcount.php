@@ -2,13 +2,15 @@
 
 // Bir veri veritabanında var mı kontrol etmek
 
-$cek = $db->prepare("SELECT * FROM mail WHERE mail =:mail ");
-$cek->execute([
-'mail'=>$mail
+$selectRow = $db -> prepare("SELECT * FROM mail WHERE
+ user_email =:user_email
+");
+$selectRow -> execute([
+ 'user_email'=>$email
 ]);
-$saydirma = $cek->rowCount();
+$selectRow = $selectRow -> rowCount();
  
-if($saydirma >0){ // Var
+if($selectRow > 0){ // Var
 
 }else{ // Yok
 

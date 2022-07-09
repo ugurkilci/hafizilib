@@ -1,6 +1,18 @@
 <?php
 
-$veriekle = $db->prepare("INSERT INTO tabloadi SET veri1=?");
-$veriekle ->execute([
-
+$dataAdd = $db->prepare("INSERT INTO tablename SET
+    _one=?,
+    _two=?,
+    _three=?
+");
+$dataAdd ->execute([
+    $,
+    $,
+    $
 ]);
+
+if ($dataAdd) {
+    echo '<p class="alert alert-success">Successfully added. :)</p>';
+} else {
+    echo '<p class="alert alert-danger">Oops, you encountered an error while adding it. Please try again. :/</p>';
+}

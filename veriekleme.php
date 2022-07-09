@@ -1,17 +1,17 @@
 <?php
 
-$dataAdd = $db->prepare("INSERT INTO tablename SET
+$dataAdd = $db -> prepare("INSERT INTO tablename SET
     _one=?,
     _two=?,
     _three=?
 ");
-$dataAdd ->execute([
+$dataAdd -> execute([
     $,
     $,
     $
 ]);
 
-if ($dataAdd) {
+if ( $dataAdd ) {
     echo '<p class="alert alert-success">Successfully added. :)</p>';
 } else {
     echo '<p class="alert alert-danger">Oops, you encountered an error while adding it. Please try again. :/</p>';

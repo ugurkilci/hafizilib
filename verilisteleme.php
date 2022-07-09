@@ -1,9 +1,9 @@
 <?php
 
-$veri = $db->prepare("SELECT * FROM mesajlar");
-$veri->execute();
-$islem = $veri->fetchALL(PDO::FETCH_ASSOC);
+$dataList = $db -> prepare("SELECT * FROM tablename");
+$dataList -> execute();
+$dataList = $dataList -> fetchALL(PDO::FETCH_ASSOC);
 
-foreach($islem as $row){
+foreach($dataList as $row){
     echo $row["title"];
 }

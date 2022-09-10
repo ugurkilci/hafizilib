@@ -1,0 +1,7 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<div id="result"></div>
+<script>
+    $(document).ready(function(){$("#result").load("ajax.php");});
+    setInterval(function() {$("#result").load('ajax.php');}, 1000);
+</script>
+<!-- ajax.php'ye ne yazarsanız onu 1000 milisaniyede çağıracaktır. -->

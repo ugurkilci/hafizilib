@@ -1,4 +1,7 @@
 # Hafız-ı Lib
+Yararlı kod parçalarının bulunduğu kitaplık.
+**Şu koduda paylaşır mısın dersen:** https://github.com/ugurkilci/hafizilib/issues
+
 Elimin altında olmasını istediğim kodlar ve bilgiler
 
 Yıllar önce kendim için açtığım blog yaklaşık 10000 tıklanma aldı. Şimdi seviye atlatmanın vakti geldi. Başkalarınıda paylaşıyorum.

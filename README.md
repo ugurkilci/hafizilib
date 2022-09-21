@@ -1,7 +1,7 @@
 # Hafız-ı Lib
 Yararlı kod parçalarının bulunduğu kitaplık.
 
-**Şu koduda paylaşır mısın dersen:** https://github.com/ugurkilci/hafizilib/issues
+**Şu koduda paylaşır mısın dersen:** https://github.com/ugurkilci/hafizilib/discussions
 
 --
 

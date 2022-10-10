@@ -1,0 +1,19 @@
+<div class="youtube-video-place embed-responsive embed-responsive-4by3 " data-yt-url="https://www.youtube.com/embed/BjngNWP9C5s?rel=0&showinfo=0&autoplay=1">
+<img src="/dist/images/your-video-thumbnail.jpg" async class="play-youtube-video">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+<script>
+var video_wrapper = $('.youtube-video-place');
+//  Check to see if youtube wrapper exists
+if(video_wrapper.length){
+// If user clicks on the video wrapper load the video.
+$('.play-youtube-video').on('click', function(){
+/* Dynamically inject the iframe on demand of the user.
+ Pull the youtube url from the data attribute on the wrapper element. */
+video_wrapper.html('<iframe allowfullscreen frameborder="0" class="embed-responsive-item" src="' + video_wrapper.data('yt-url') + '"></iframe>');
+});
+}
+</script>
+
+Kaynak: https://medium.com/@ryanlebel/speed-up-page-load-time-c6b9148d0a2

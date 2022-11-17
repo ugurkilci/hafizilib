@@ -1,0 +1,34 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<button id="btnDownload">İndir</button>
+
+<div id="capture" style="background-color: red;color:white;padding:10px;">
+    Uğur KILCI, entrepreneur and content creator. ugurkilci.com. youtube.com/ugurkilci. instagram.com/ugur2nd. twitter.com/ugur2nd
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+
+<script> 
+    function download(url){
+        var a = $("<a style='display:none' id='js-downloder'>")
+        .attr("href", url)
+        .attr("download", "UgurKILCI.png")
+        .appendTo("body");
+
+        a[0].click();
+
+        a.remove();
+    }
+
+    function saveCapture(element) {
+        html2canvas(element).then(function(canvas) {
+            download(canvas.toDataURL("image/png"));
+        })
+    }
+
+    $('#btnDownload').click(function(){
+    var element = document.querySelector("#capture");
+        saveCapture(element)
+    })
+</script>

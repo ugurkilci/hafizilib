@@ -1,0 +1,19 @@
+<button id="tamekran-button">Tam Ekran</button>
+
+<script type="text/javascript">
+var tamEkranButon = document.getElementById("tamekran-button");
+
+function tamEkranYap() {
+    /*tam ekran yapÄ±lacak div*/
+    var tamEkranDiv    = document.getElementById("tamekran");
+    
+    /*tarayÄ±cÄ±nÄ±n tam ekranÄ± destekleyip desteklemediÄŸini kontrol edyiyoruz. Tam ekran yapÄ±lacak div ile.*/    
+   var tamEkranFonk=tamEkranDiv.requestFullscreen||
+                    tamEkranDiv.mozRequestFullScreen||
+                    tamEkranDiv.msRequestFullscreen||
+                    tamEkranDiv.webkitRequestFullScreen;
+    
+    tamEkranFonk.call(tamEkranDiv);    
+ }
+tamEkranButon.addEventListener('click', tamEkranYap);
+</script>

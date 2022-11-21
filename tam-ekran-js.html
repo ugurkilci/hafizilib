@@ -1,5 +1,58 @@
-<button id="tamekran-button">Tam Ekran</button>
+    <style>
+        #tamekran:-moz-full-screen {
+  background-color: black;
+}
+#tamekran:-ms-fullscreen {
+  background-color: black;
+}
+#tamekran:-webkit-full-screen {
+  background-color: black;
+}
+#tamekran:fullscreen {
+  background-color: black;
+}
+     
+#tamekran:-moz-full-screen > h1 {
+    display: block;
+}
+#tamekran:-ms-fullscreen > h1 {
+    display: block;
+}
+#tamekran:-webkit-full-screen > h1 {
+    display: block;
+}
 
+
+#tamekran:-moz-full-screen > button {
+  display: none;
+}
+#tamekran:-ms-fullscreen > button {
+  display: none;
+}
+     
+#tamekran:-webkit-full-screen > button{
+  display: none;
+}
+     
+#tamekran:fullscreen > button {
+  display: none;
+}
+     
+#tamekran:fullscreen > button {
+  display: none;
+}
+
+#tamekran:fullscreen > h1 {
+  color: red;
+}
+     
+ #tamekran > h1{
+     display: none;
+ }
+    </style>
+
+<button id="tamekran-button">Tam Ekran</button>
+<div id="tamekran">tam ekran</div>
 <script type="text/javascript">
 var tamEkranButon = document.getElementById("tamekran-button");
 

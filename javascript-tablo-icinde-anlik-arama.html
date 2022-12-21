@@ -1,0 +1,24 @@
+<input type="text" id="aramakutusu" class="form-control mb-2" onkeyup="tabloicindearama()" placeholder="Ara" title="Ara">
+
+<table class="table table-striped" id="aranacaktablo">Buraya tabloyu oluşturun</table>
+
+<script>
+function tabloicindearama() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("aramakutusu");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("aranacaktablo");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>

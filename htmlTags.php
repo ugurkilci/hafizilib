@@ -9,6 +9,7 @@ function htmlTags($array = []){
             <title>'.$array["title"].'</title>
             <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
             <meta name="description" content="'.$array["description"].'"/>
+            <meta name="keywords" content="'.$array["keywords"].'"/>
             <link rel="canonical" href="'.$array["link"].'" />
             <meta property="og:locale" content="'.$array["language"].'" />
             <meta property="og:type" content="website" />

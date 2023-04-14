@@ -43,8 +43,8 @@ function htmlTags($array = []){
     }
 
     htmlTags([
-        "title" => "Middle Valley * Text-Based Küçük Online Oyun",
-        "description" => "Yazı tabanlı gerçek zamanlı fantastik online rol yapma oyunu.",
+        "title" => "Title",
+        "description" => "Desc",
         "keywords" => "",
         "image" => "",
         "twitter" => "ugur2nd",

@@ -1,0 +1,11 @@
+<!-- Bu contentedtable="true" diyerek yapabiliyorsunuz. -->
+<div class="textarea" style="" contenteditable="true"></div>
+
+<script>
+  // Bu kod ile de bir satır indiğinizde div/textarea otomatik boyutunu yükseltiyor.
+  var div = document.getElementById('myDiv');
+  div.addEventListener('input', function() {
+    this.style.height = 'auto';
+    this.style.height = this.scrollHeight + 'px';
+  });
+</script>

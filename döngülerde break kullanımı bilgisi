@@ -1,0 +1,7 @@
+`break 2;` ifadesi, iç içe geçmiş iki döngüden çıkmak için kullanılır. Yani, içteki ve dıştaki döngüyü sona erdirir.
+
+Bu durumda, `foreach($keywords as $keyword)` döngüsünün içinde bulunduğu döngüyü (içteki döngü) sona erdirir. `break 1;` şeklinde kullanılsaydı, sadece içteki döngü sona ererdi.
+
+Eğer `break;` kullanılsaydı, sadece içteki döngü sona ererdi ve dıştaki döngü devam ederdi.
+
+Kısacası, `break 2;` ifadesi, içteki ve dıştaki döngüyü sonlandırır ve döngülerin dışına çıkar.

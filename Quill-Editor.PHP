@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quill Editörü</title>
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <style>
+        .ql-toolbar {
+            background:white;
+            position: sticky;
+            top: 10px;
+            z-index: 9999999999999999999;
+        }
+    </style>
 </head>
 <body>
 

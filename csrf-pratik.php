@@ -1,7 +1,10 @@
 <?php
 
 // Bunu ayar/config/init.php gibi yerlere koyun.
+
+if($_POST){
 $_SESSION["_token"] = md5(time());
+}
 
 function csrf()
 {

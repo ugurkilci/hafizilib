@@ -1,4 +1,7 @@
 <?php
+// ÖNEMLİ NOT: sadece terminal veya cmd için sağlıklıdır, apache gibi web sunucularında tavsiye edilmez
+// kullanmak için react/child-process kütüphanesini
+// composer'dan kurmanız gerekir
 include __DIR__ . "/vendor/autoload.php"; // composer autoload
 
 $process = new React\ChildProcess\Process('ls'); // cmd veya sh komutu

@@ -1,0 +1,40 @@
+<style>
+  body{
+    scroll-behavior: smooth;
+  }
+</style>
+<a href="#gidilecek-bolum">Git</a>
+
+<div id="gidilecek-bolum">Gidildi</div>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const target = document.querySelector(this.getAttribute('href'));
+            const targetPosition = target.getBoundingClientRect().top;
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition;
+            const duration = 1000; // Kaydırmanın süresi (ms cinsinden)
+            let start = null;
+
+            function animation(currentTime) {
+                if (start === null) start = currentTime;
+                const timeElapsed = currentTime - start;
+                const run = ease(timeElapsed, startPosition, distance, duration);
+                window.scrollTo(0, run);
+                if (timeElapsed < duration) requestAnimationFrame(animation);
+            }
+
+            function ease(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return c / 2 * t * t + b;
+                t--;
+                return -c / 2 * (t * (t - 2) - 1) + b;
+            }
+
+            requestAnimationFrame(animation);
+        });
+    });
+</script>

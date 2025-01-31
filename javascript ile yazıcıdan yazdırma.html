@@ -1,0 +1,27 @@
+<button onclick="yazdir(yazdirID1)">Yazdır</button>
+
+<script>
+    function yazdir(icerik) {
+        let yeniPencere = window.open('', '', 'width=800,height=600');
+        yeniPencere.document.open();
+        yeniPencere.document.write(icerik); // İçeriği burada yazdırıyoruz
+        yeniPencere.document.close();
+        yeniPencere.print(); // Yazdırma işlemi başlatılıyor
+        yeniPencere.close(); // Pencereyi kapatıyoruz
+    }
+
+    yazdirID1 = `
+    <!DOCTYPE html>
+    <html lang='tr'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Yazdır</title>
+    </head>
+    <body>
+        <h1>Falan filan</h1>
+        <p>Bu içeriğin yazdırılması gerekiyor.</p>
+    </body>
+    </html>
+    `;
+</script>

@@ -7,3 +7,5 @@ function strtolower_turkce($metin){
     $metin	= strtolower($metin);
     return $metin;
 }
+
+// alternatif olarak mb_strtolower() kullanılabilir.

@@ -1,20 +1,21 @@
 <?php
 
 // Alexa değerlerini almak
+// Alexa 2022'de kapandı, data.alexa.com artık yanıt vermiyor.
+// Yerine ücretsiz NetAPI Top 1M sıralaması (API anahtarı gerekmez): https://netapi.com/top-1-mln-websites/
 
-// site url
-$url = 'https://www.girisimzel.com';
+// site domain
+$domain = 'girisimzel.com';
 // get data
-$alexa = simplexml_load_file('http://data.alexa.com/data?cli=10&url='.$url);
-// global rank
-$globalRank = number_format( (int) $alexa->SD->POPULARITY['TEXT'] );
-// country rank
-$countryCode = $alexa->SD->COUNTRY['CODE'];
-$countryName = $alexa->SD->COUNTRY['NAME'];
-$countryRank = number_format( (int) $alexa->SD->COUNTRY['RANK'] );
+$data = json_decode(file_get_contents('https://netapi.com/api-json/?method=domain-rank&domain='.urlencode($domain)), true);
+// global rank (0 = not in the top 1 million)
+$globalRank = number_format( (int) $data['rank'] );
+// rank inside the domain's TLD (.com, .tr ...)
+$tld = $data['tld'];
+$tldRank = number_format( (int) $data['rank_in_tld'] );
 // global rank print
 print $globalRank;
 print '
 ';
-// country rank print
-print $countryName.' '.$countryRank;
+// TLD rank print
+print '.'.$tld.' '.$tldRank;
